@@ -1,0 +1,10 @@
+rate = float(input("원화 대 위엔화 환전율"))
+todo = int(input("원화 위완호 0 , 위안화 원화 1"))
+if todo == 0:
+  money = int(input("원화 입력"))
+  print(money,"원은",money*6.81,"위안입니다")
+elif todo == 1:
+  money = int(input("위안화 입력"))
+  print(money,"원은",money*6.81,"위안입니다")
+else:
+  print("오류")

@@ -1,0 +1,5 @@
+week = ["일","월","화","수","목","금","토"]
+current = int(input("오늘의 요일을 입력"))
+future = int(input("오늘부터 경과한 일수"))
+print("오늘",week[current%7],"내일",week[(current+future)%7])
+

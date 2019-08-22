@@ -1,0 +1,9 @@
+a,b,c = map(eval,input("a,b,c를 입력하세요").split())
+r1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a)
+r2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
+if b**2-4*a*c < 0:
+    print("실근 X")
+elif b**2-4*a*c == 0:
+    print("실근은",r1)
+elif b**2-4*a*c > 0:
+    print("실근은",r1,r2)

@@ -1,0 +1,9 @@
+h = ["월","화","수","목","금","토","일"]
+q = int(input("일"))
+m = int(input("월"))
+year = int(input("연도"))
+j = year / 100
+k = year % 100
+
+answer = (q + 26*(m+1)/10 + k + k/4 + j/4 + 5*j)%7
+print(h[int(answer)]-1)

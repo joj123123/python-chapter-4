@@ -1,0 +1,11 @@
+x,y = map(float,(input("점의 x와 y좌표를 입력").split()))
+incline = -2
+if x < 0 or x > 200:
+  print("삼각형 외부")
+elif y > 100 or y < 0:
+  print("삼각형 외부")
+elif y < x*0.5:
+  print("삼각형 내부")
+else:
+  print("삼각형 외부")
+  

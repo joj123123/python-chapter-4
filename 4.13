@@ -1,0 +1,7 @@
+import random
+answer = int(input("앞이면 0 뒤면 1"))
+x = random.randint(0,1)
+if answer == x:
+  print("정답")
+else:
+  print("오답")

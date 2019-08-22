@@ -1,0 +1,10 @@
+x1,y1,w1,h1 = map(float,input("r1중심의 x,y 좌표값, 폭과 넓이").split())
+x2,y2,w2,h2 = map(float,input("r2중심의 x,y 좌표값, 폭과 넓이").split())
+condition1 = x1 + w1/2 > x2 + w2/2 and x1 - w1/2 > x2 - w2/2 and y1 + h1/2 > y2 + h2/2 and y1 - h1/2 > y2 - h2/2
+condition2 = x1 + w1/2 < x2 + w2/2 and x1 - w1/2 < x2 - w2/2 and y1 + h1/2 < y2 + h2/2 and y1 - h1/2 < y2 - h2/2
+if condition1 == True:
+  print("사각형 내부")
+elif condition2 == True:
+  print("사각형 외부")
+else:
+  print("겹침")

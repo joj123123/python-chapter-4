@@ -1,0 +1,5 @@
+x,y = map(int,input("x,y 좌표").split())
+if x < 5 and x > -5 and y < 5 and y > -5:
+  print("내부")
+else:
+  print("외부")

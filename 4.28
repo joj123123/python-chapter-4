@@ -1,0 +1,8 @@
+r1,x1,y1 = map(int,input("r1,x1,y1").split())
+r2,x2,y2 = map(int,input("r2,x2,y2").split())
+
+distance = ((x2-x1)**2 + (y2-y1)**2)**0.5
+if distance > r1:
+  print("원 내부")
+else:
+  print("원 외부")

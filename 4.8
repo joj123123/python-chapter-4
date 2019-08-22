@@ -1,0 +1,11 @@
+first_kg,first_price = map(eval,input("포대 1의 무게와 가격을 입력").split())
+second_kg,second_price = map(eval,input("포대 2의 무게와 가격을 입력").split())
+
+first = first_kg/first_price
+second = second_kg/second_price
+
+if first < second:
+  print("두번째 포대가 낫다")
+else:
+  print("첫번째 포대가 낫다")
+  

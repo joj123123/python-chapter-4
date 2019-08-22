@@ -1,0 +1,11 @@
+import random
+list = [0,1,2]
+x = random.randint(0,3)
+answer = int(input("가위(0),바위(1),보(2)"))
+if x == answer:
+  print("비겼습니다")
+elif list[answer-1] == x:
+  print("이겼습니다")
+else:
+  print("졌습니다")
+print(x)

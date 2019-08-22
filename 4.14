@@ -1,0 +1,24 @@
+import random
+lottery = input("로또 3개번호")
+list = []
+
+answer = 0
+count = 0
+for i in range(3):
+  list.append(str(random.randint(0,10)))
+for i in range(3):
+  if list[i] == lottery[i]:
+    answer += 1
+  if list.count(lottery[i]) != 0:
+    count += 1
+    
+print(list)
+
+if answer == 3:
+  print("천만원")
+elif count == 3:
+  print("삼백만언")
+elif  count > 0:
+  print("100")
+else:
+  print("꽝")

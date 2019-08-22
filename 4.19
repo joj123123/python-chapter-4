@@ -1,0 +1,9 @@
+tem = float(input("온도"))
+wind = float(input("바람"))
+
+if tem > 50 or tem < -41:
+  print("부적절")
+elif wind < 2:
+  print("부적절")
+else:
+  print("적절")

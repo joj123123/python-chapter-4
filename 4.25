@@ -1,0 +1,12 @@
+num = input("숫자를 입력")
+count = 0
+
+for i in range(len(num)):
+  if num[i] != num[-1-i]:
+    print("대칭수가아님")
+    break
+  else:
+    count += 1
+if count == len(num):
+  print("대칭수")
+    
